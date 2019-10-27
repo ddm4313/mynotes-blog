@@ -1,0 +1,106 @@
+<!-- MyNotes generator made by github.com/ddm50-->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://kit.fontawesome.com/4c4962a92f.js" crossorigin="anonymous"></script>
+    <title>{{title}}</title>
+  </head>
+  <body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="#" style="color: white; font-family: 'Indie Flower', cursive; font-size: 28px;
+"><i class="fas fa-sticky-note"></i> <i>{{title}}</i></a>
+    </nav>
+    <div class="row">
+    {% for post in posts %}
+        <div class="col-sm-6"> <div class="card">
+          <h5 class="card-category" style="margin-left: 25px; margin-top: 5px; font-size: 15px; width: 150px;
+"> {{post[3]}}</h5>
+             <hr style="margin-top: 0px;">
+            <h4 class="card-title" style="width: 220px;"><p class="card-text">{{post[0]}}</p></h4>
+            <a href="/posts/{{post[5]}}"><img class="card-img-top" src="{{post[4]}}" alt="Card image"></a>
+</div></div>
+        {% endfor %}
+
+        </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Indie+Flower|Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.col-sm-6 {
+    margin-top: 5%;
+    padding-left: 90px;
+}
+
+
+.card-title {
+    margin-left:15%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Arimo', sans-serif;
+}
+.card-text {
+    margin: 0 auto;
+  text-align: center;
+}
+
+.card {
+    width:390px; color: black;  font-family: 'Arimo', sans-serif;
+}
+    @media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3) {
+        .card {
+    width:290px; color: black;  font-family: 'Arimo', sans-serif;
+}
+       .col-sm-6 {
+        padding-left: 40px;
+       }
+    }
+
+@media only screen
+   and (device-width : 360px)
+   and (device-height : 640px) {
+        .card {
+    width:290px; color: black;  font-family: 'Arimo', sans-serif;
+}
+       .col-sm-6 {
+        padding-left: 40px;
+       }
+   }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width:290px; color: black;  font-family: 'Arimo', sans-serif;
+}
+       .col-sm-6 {
+        padding-left: 60px;
+       }
+    }
+}
+
+</style>
+
+<style>
+</style>
